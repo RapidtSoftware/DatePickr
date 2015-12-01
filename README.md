@@ -8,7 +8,7 @@ Simply include jQuery and then the DatePickr JavaScript and CSS files. The minif
 	<script src="path/to/datepickr.min.js"></script>
 	<link rel="stylesheet" href="path/to/datepickr.min.css"/>
 	
-See the [Github Page](http://rapidtsoftware.github.io/DatePickr/) or [examples directory](http://github.com/RapidtSoftware/DatePickr/examples/) for examples.
+Please see the [DatePickr Github Page](http://rapidtsoftware.github.io/DatePickr/) or [examples directory](tree/master/examples/) for examples.
 
 ##Bugs and Feature Requests
 
