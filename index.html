@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="files/.css" />
+		<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="files/.js"></script>
+		<script type="text/javascript" src="files/prism.js"></script>
+		<link rel="stylesheet" type="text/css" href="files/prism.css" />
+		<script type="text/javascript" src="datepickr/datepickr.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="datepickr/datepickr.css" />
+		<link rel="shortcut icon" type="image/png" href="favicon-small.png?123"/>
+		
+		<title>DatePickr - The ultimate, lightweight jQuery datepicker, with features such as custom styling, draggable date range picking, inline calendars, date limits and much more...</title>
+	</head>
+	<body class="language-markup">
+		<div id="nav">
+			<a href="#top" class="scrollto">Top</a>
+			<a href="#usage" class="scrollto">Usage</a>
+			<a href="#examples" class="scrollto">Examples</a>
+		</div>
+		<div class="bg-red section" id="top">
+			<h1 class="title">DatePickr</h1><br/><br/>
+			<span class="under-title">The ultimate, lightweight jQuery datepicker, with features such as custom styling, draggable date range picking, inline calendars, date limits and much more...</span>
+		</div>
+		<div class="bg-white section" id="usage">
+			<h1 class="section-title">Usage</h1>
+			<span class="under-title">Simply include jQuery and then the DatePickr JavaScript and CSS files.</span><br/><br/>
+			<pre><code>&lt;script src="path/to/jquery.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/datepickr.min.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="path/to/datepickr.css"/&gt;</code></pre>
+		</div>
+		<div class="bg-blue section" id="examples">
+			<h1 class="section-title">Examples</h1>
+			
+			<span class="small-title">Simple Date Picker</span>
+				<div id="datepickr-calendar-1"></div>
+				<script id="datepickr-calendar-1-script">
+					$("#datepickr-calendar-1").DatePickr();
+				</script><br/><br/>
+				<pre><code>&lt;div id="datepickr-calendar-1"&gt;&lt;/div&gt;
+&lt;script&gt;
+	$("#datepickr-calendar-1").DatePickr();
+&lt;/script&gt;</code></pre>
+			<br/><br/>
+
+			<hr/>
+			
+			<span class="small-title">Draggable Date Range Picker</span>
+				<div id="datepickr-calendar-2"></div>
+				<script id="datepickr-calendar-2-script">
+					$("#datepickr-calendar-2").DatePickr({
+						draggable: true
+					});
+				</script><br/><br/>
+				<pre><code>&lt;div id="datepickr-calendar-2"&gt;&lt;/div&gt;
+&lt;script&gt;
+	$("#datepickr-calendar-2").DatePickr({
+		draggable: true
+	});
+&lt;/script&gt;</code></pre>
+			<br/><br/>
+			
+			<hr/>
+			
+			<span class="small-title">Invoke with HTML attributes</span>
+			<div id="datepickr-calendar-3" data-datepickr data-draggable></div><br/><br/>
+			<pre><code>&lt;div id="datepickr-calendar-3" data-datepickr data-draggable&gt;&lt;/div&gt;</code></pre>
+			<br/><br/>
+			
+			<hr/>
+			
+			<span class="small-title">Using Events</span>
+				<div id="datepickr-calendar-4"></div>
+				<script id="datepickr-calendar-4-script">
+					$("#datepickr-calendar-4").DatePickr({
+						onChange: function(){
+							alert("Changed!");
+						},
+						onMonthChange: function(e){
+							alert("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+						}
+					});
+				</script><br/><br/>
+				<pre><code>&lt;div id="datepickr-calendar-4"&gt;&lt;/div&gt;
+&lt;script&gt;
+	$("#datepickr-calendar-4").DatePickr({
+		onChange: function(){
+			alert("Changed!");
+		},
+		onMonthChange: function(e){
+			alert("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+		}
+	});
+&lt;/script&gt;</code></pre>
+			<br/><br/>
+			
+			<hr/>
+
+			<span class="small-title">Input with Events</span>
+				<input id="datepickr-calendar-5" type="text" placeholder="Please choose a date."/>
+				<script id="datepickr-calendar-5-script">
+					$("#datepickr-calendar-5").DatePickr({
+						onChange: function(){
+							alert("Changed!");
+						},
+						onShow: function(){
+							alert("Datepickr is being shown!");
+						},
+						onHide: function(){
+							alert("Datepickr is being hidden!")
+						},
+						onMonthChange: function(e){
+							alert("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+						}
+					});
+				</script><br/><br/>
+				<pre><code>&lt;input id="datepickr-calendar-5" type="text"/&gt;
+&lt;script&gt;
+	$("#datepickr-calendar-5").DatePickr({
+		onChange: function(){
+			alert("Changed!");
+		},
+		onShow: function(){
+			alert("Datepickr is being shown!");
+		},
+		onHide: function(){
+			alert("Datepickr is being hidden!")
+		},
+		onMonthChange: function(e){
+			alert("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+		}
+	});
+&lt;/script&gt;</code></pre>
+			<br/><br/>
+			
+			<hr/>
+			
+			<span class="small-title">Input with minimum and maximum dates and a custom position.</span>
+				<input id="datepickr-calendar-6" type="text" placeholder="Please choose a date."/>
+				<script id="datepickr-calendar-6-script">
+					$("#datepickr-calendar-6").DatePickr({
+						datemin: new Date().addDays(6),
+						datemax: "2 September 2020",
+						position: "right"
+					});
+				</script><br/><br/>
+				<pre><code>&lt;input id="datepickr-calendar-6" type="text"/&gt;
+&lt;script&gt;
+	$("#datepickr-calendar-6").DatePickr({
+		datemin: new Date().addDays(6),
+		datemax: "2 September 2020",
+		position: "right"
+	});
+&lt;/script&gt;</code></pre>
+		</div>
+	</body>
+</html>

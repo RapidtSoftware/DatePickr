@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div[class*=bg-] {
+	margin: 0;
+	padding: 50px 20px;
+	text-align: center;
+}
+
+#nav {
+	display: block;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: #FFFFFF;
+}
+
+#nav > a {
+	display: inline-block;
+	color: #111111;
+	text-decoration: none;
+	line-height: 40px;
+	padding: 0 10px;
+	border-right: 1px solid #CCCCCC;
+}
+
+#top {
+	padding-top: 90px;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	margin: 1em auto;
+	margin-bottom: 2em;
+	padding: 0;
+	width: 90%;
+}
+
+.bg-blue hr {
+	border-top: 1px solid #2B3C4E;
+	border-bottom: 1px solid #3F5973;
+}
+
+h1.title {
+	font-size: 70px;
+	margin-bottom: 30px;
+}
+
+h1.section-title {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+
+.small-title {
+	font-size: 30px;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.bg-white {
+	background: #ECF0F1;
+	color: #111111;
+}
+
+.bg-blue {
+	background: #354B61;
+	color: #ECF0F1;
+}
+
+.bg-red {
+	background: #9C2E25;
+	color: #ECF0F1;
+}
+
+pre {
+	text-align: left;
+	margin: 30px auto;
+	padding: 10px;
+	line-height: 25px;
+	border-radius: 5px;
+	border: 1px solid #DDDDDD;
+	border-left: 4px solid #CCCCCC;
+	border-right: 4px solid #CCCCCC;
+	display: none;
+}
+
+table {
+	display: table;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+th, td {
+	padding: 0 15px;
+}
+
+input {
+	display: block;
+	margin: 1.25em auto;
+	padding: 7px 10px;
+	border: 1px solid #C0C0C0;
+	border-radius: 5px;
+	outline: none;
+}
+
+.bg-white *::selection,
+.bg-white::selection {
+	color: #FFFFFF;
+	background: #777777;
+}
+
+.bg-white *::-moz-selection,
+.bg-white::-moz-selection {
+	color: #FFFFFF;
+	background: #777777;
+}
+
+.bg-blue *::selection,
+.bg-blue::selection {
+	color: #354B61;
+	background: #FFFFFF;
+}
+
+.bg-blue *::-moz-selection,
+.bg-blue::-moz-selection {
+	color: #354B61;
+	background: #FFFFFF;
+}
+
+.bg-red *::selection,
+.bg-red::selection {
+	color: #9C2E25;
+	background: #FFFFFF;
+}
+
+.bg-red *::-moz-selection,
+.bg-red::-moz-selection {
+	color: #9C2E25;
+	background: #FFFFFF;
+}
