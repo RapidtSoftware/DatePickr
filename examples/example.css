@@ -1,0 +1,14 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 10px;
+}
+
+h1 {
+	margin: 30px;
+	font-size: 72px;
+}
+
+.datepickr {
+	margin: 5px auto;
+}

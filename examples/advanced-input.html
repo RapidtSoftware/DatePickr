@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="../dist/js/datepickr.min.js"></script>
+		<link rel="stylesheet" href="../dist/css/datepickr.min.css"/>
+		<link rel="stylesheet" href="example.css"/>
+	</head>
+	<body>
+		<h1>Advanced Input</h1>
+		<p>Custom selection continue key, events, minimum and maximum dates, position and draggable.</p><br/><br/>
+		<input id="datepickr-calendar-5" type="text"/>
+		<script>
+			$("#datepickr-calendar-5").DatePickr({
+				onChange: function(){
+					console.log("Changed!");
+				},
+				onShow: function(){
+					console.log("Datepickr is being shown!");
+				},
+				onHide: function(){
+					console.log("Datepickr is being hidden!")
+				},
+				onMonthChange: function(e){
+					console.log("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+				},
+				datemin: new Date().addDays(6),
+				datemax: "2 September 2020",
+				position: "right",
+				draggable: true,
+				showDragNote: true,
+				dragNoteText: "Hold <kbd>ctrl</kbd> to continue selection on another month.",
+				dragKey: 17,
+			});
+		</script>
+		<br/><br/>
+	</body>
+</html>

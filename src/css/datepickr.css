@@ -1,0 +1,100 @@
+.datepickr {
+	color: #333333;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	width: 215px;
+	text-align: center;
+	border: 1px solid #C0C0C0;
+	padding: 10px;
+	background: #FFFFFF;
+	
+	/* Disable selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.datepickr-top {
+	margin-bottom: 10px;
+}
+
+.datepickr-weekdays {
+	display: block;
+}
+
+.datepickr-weekday {
+	display: inline-block;
+	width: 29px;
+	line-height: 29px;
+}
+
+.datepickr-left {
+	margin-right: 20px;
+}
+
+.datepickr-right {
+	margin-left: 20px;
+}
+
+.datepickr-left, .datepickr-right {
+	width: 29px;
+	line-height: 29px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.datepickr-left:hover, .datepickr-right:hover {
+	background: #DDDDD1;
+}
+
+.datepickr-day {
+	display: inline-block;
+	width: 29px;
+	line-height: 29px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.datepickr-day:hover {
+	color: #111111;
+}
+
+.datepickr-disabled {
+	color: #999999;
+}
+
+.datepickr-disabled:hover {
+	color: #777778;
+}
+
+.datepickr-highlighted {
+	background: #2980B9;
+	color: #FFFFFF;
+}
+
+.datepickr-highlighted:hover {
+	color: #EEEEE1;
+}
+
+.datepickr-dragging {
+	background: #3097DA;
+	color: #FFFFFF;
+}
+
+.datepickr-dragnote {
+	font-size: 12px;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5px;
+	display: block;
+	line-height: 18px;
+}
+
+.datepickr kbd {
+	background: #DDDDDD;
+	padding: 3px 7px;
+}

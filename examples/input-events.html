@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="../dist/js/datepickr.min.js"></script>
+		<link rel="stylesheet" href="../dist/css/datepickr.min.css"/>
+		<link rel="stylesheet" href="example.css"/>
+	</head>
+	<body>
+		<h1>Input with Events</h1><br/><br/>
+		<input id="datepickr-calendar-5" type="text"/>
+		<script>
+			$("#datepickr-calendar-5").DatePickr({
+				onChange: function(){
+					alert("Changed!");
+				},
+				onShow: function(){
+					alert("Datepickr is being shown!");
+				},
+				onHide: function(){
+					alert("Datepickr is being hidden!")
+				},
+				onMonthChange: function(e){
+					alert("Month went one " + ((e.direction == -1) ? "backward": "forward"));
+				}
+			});
+		</script>
+		<br/><br/>
+	</body>
+</html>
