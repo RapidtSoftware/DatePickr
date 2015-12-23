@@ -1,4 +1,4 @@
-(function(){
+(function() {
 
 	/* Days Between Dates ( http://stackoverflow.com/a/4413721/5305938 ) */
 
