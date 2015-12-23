@@ -13,3 +13,8 @@ Please see the [DatePickr Github Page](http://rapidtsoftware.github.io/DatePickr
 ##Bugs and Feature Requests
 
 Found a bug? Want to suggest a feature request? Then please submit an [issue](https://github.com/RapidtSoftware/DatePickr/issues/).
+
+##Change Log
+
+- 1.0.0 - Create DatePickr
+- 1.0.1 - Fixed small bug that caused DatePickr to disfunction.
