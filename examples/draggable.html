@@ -1,30 +1,16 @@
 <html>
 	<head>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="../dist/js/datepickr.js"></script>
-		<link rel="stylesheet" href="../dist/css/datepickr.css"/>
+		<script src="//code.jquery.com/jquery.min.js"></script>
+		<script src="../dist/js/datepickr.min.js"></script>
+		<link rel="stylesheet" href="../dist/css/datepickr.min.css"/>
 		<link rel="stylesheet" href="example.css"/>
 	</head>
 	<body>
-		<h1>Draggable Date Range Picker</h1><br/>
-		<input id="date1"><br/><br/>
-		<input id="date2"><br/>
+		<h1>Draggable Date Range Picker</h1><br/><br/>
 		<div id="datepickr-calendar-2"></div>
 		<script id="datepickr-calendar-2-script">
 			$("#datepickr-calendar-2").DatePickr({
-				draggable: true,
-				inline: true,
-				onChange: function(date){
-					var dates = date.date;
-					var len = dates.length;
-					var start = new Date(dates[len-1].year, dates[len-1].month, dates[len-1].day);
-					var end = new Date(dates[0].year, dates[0].month, dates[0].day);
-					//console.log(dates[0]);
-					var date1 = $("#date1").val();
-					var date2 = $("#date2").val();
-					$("#date1").val(start);
-					$("#date2").val(end);
-		        }
+				draggable: true
 			});
 		</script><br/><br/>
 	</body>
