@@ -66,7 +66,8 @@
 			onShow: function(){},
 			onBeforeMonthChange: function(){},
 			onMonthChange: function(){},
-			position: "bottom"
+			position: "bottom",
+            inline: true
 
 		}, options);
 
@@ -172,7 +173,9 @@
 			$("*").on("show", function(){
 				datepickrPosition();
 			});
-			datepickr.hide();
+			if(!options.inline){
+                datepickr.hide();
+            }
 			original.on("focus", function(){
 				var event = {
 					element: datepickr
@@ -185,7 +188,7 @@
 					var event = {
 						element: datepickr
 					};
-					div.hide();
+					//div.hide();
 					options.onHide(event);
 				});
 			});
@@ -554,7 +557,8 @@
 				datemin: data("datemin") || "1 Jan 1995",
 				datemax: data("datemax") || "1 Dec 2035",
 				draggable: $(this).is("[data-draggable]"),
-				position: data("position") || "bottom"
+				position: data("position") || "bottom",
+                inline: data("inline")
 			});
 		});
 	});
